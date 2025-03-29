@@ -13,3 +13,17 @@ export const loginApi = (payload) => {
     .then((response) => response)
     .catch((err) => err);
 };
+
+export const profileApi = () => {
+  return api
+    .get("/profile")
+    .then((response) => response)
+    .catch((err) => err);
+};
+
+export const profileUpdateApi = () => {
+  return api
+    .put("/profile-update")
+    .then((response) => response)
+    .catch((err) => err);
+};
